@@ -115,7 +115,7 @@ const Tracking = () => {
                     <ListItemIcon>
                       <CheckCircleOutline />
                     </ListItemIcon>
-                    <ListItemText primary={waybillData.Status} />
+                    <ListItemText primary={`Статус: ${waybillData.Status}`} />
                   </StyledListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
@@ -123,7 +123,7 @@ const Tracking = () => {
                     <ListItemIcon>
                       <Send />
                     </ListItemIcon>
-                    <ListItemText primary={waybillData.WarehouseSender} />
+                    <ListItemText primary={`Відправлено: ${waybillData.WarehouseSender}`} />
                   </StyledListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
@@ -131,7 +131,7 @@ const Tracking = () => {
                     <ListItemIcon>
                       <Receipt />
                     </ListItemIcon>
-                    <ListItemText primary={waybillData.WarehouseRecipient} />
+                    <ListItemText primary={`Отримано: ${waybillData.WarehouseRecipient}`} />
                   </StyledListItemButton>
                 </ListItem>
               </List>

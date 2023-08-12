@@ -26,31 +26,31 @@ const TableOfWarhouses = () => {
       sx={{ overflowX: 'auto', maxHeight: 'calc(100vh - 200px)' }}
     >
       <Table>
-        <TableHead sx={{ color: 'blue' }}>
+        <TableHead sx={{ color: 'white' }}>
           <TableRow>
-            <StyledTableSell sx={{ fontWeight: 'bold', fontSize: '16px' }}>
+            <StyledTableSell sx={{ fontWeight: 'bold', fontSize: '16px', color: 'white' }}>
               Адреса
             </StyledTableSell>
             <StyledTableSell
-              sx={{ fontWeight: 'bold', fontSize: '16px' }}
+              sx={{ fontWeight: 'bold', fontSize: '16px', color: 'white' }}
               align="right"
             >
               Область
             </StyledTableSell>
             <StyledTableSell
-              sx={{ fontWeight: 'bold', fontSize: '16px' }}
+              sx={{ fontWeight: 'bold', fontSize: '16px', color: 'white' }}
               align="right"
             >
               Телефон
             </StyledTableSell>
             <StyledTableSell
-              sx={{ fontWeight: 'bold', fontSize: '16px' }}
+              sx={{ fontWeight: 'bold', fontSize: '16px', color: 'white' }}
               align="right"
             >
               Індекс
             </StyledTableSell>
             <StyledTableSell
-              sx={{ fontWeight: 'bold', fontSize: '16px' }}
+              sx={{ fontWeight: 'bold', fontSize: '16px', color: 'white' }}
               align="right"
             >
               № Відділення
@@ -59,7 +59,7 @@ const TableOfWarhouses = () => {
         </TableHead>
         <TableBody>
           {warehouses.map((warhouse, index) => (
-            <StyledTableRow key={index}>
+            <StyledTableRow key={index} >
               <TableCell component="th" scope="row">
                 {warhouse.ShortAddress}
               </TableCell>

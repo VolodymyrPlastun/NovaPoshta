@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-top: 20px;
 `;
 
 export const InputContainer = styled.div`
@@ -42,7 +42,7 @@ export const StyledListItemButton = styled(ListItemButton)`
 export const StyledContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: lightblue;
+  border: 1px solid blue;
   border-radius: 5px;
   padding: 10px;
 `;
